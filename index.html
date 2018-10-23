@@ -13,29 +13,31 @@
   <body>
 
     <h1>Formulario para capturar datos</h1>
+<form method="POST" action="conexion.php" name="datos">
+  <div class="form-group">
+    <label for="usr">Cédula:</label>
+    <input type="number" class="form-control" id="cedula" name="cedula">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Nombre Completo:</label>
+    <input type="text" class="form-control" id="nombre" name="nombre">
+  </div> 
 
-    <div class="form-group">
-        <label for="usr">Cédula:</label>
-        <input type="text" class="form-control" id="usr">
-      </div>
       <div class="form-group">
-        <label for="pwd">Nombre Completo:</label>
-        <input type="password" class="form-control" id="pwd">
+        <label for="pwd">Dirección:</label>
+        <input type="text" class="form-control" id="direccion" name="direccion">
       </div> 
 
-          <div class="form-group">
-            <label for="pwd">Dirección:</label>
-            <input type="password" class="form-control" id="pwd">
-          </div> 
-    
-          <div class="form-group">
-                <label for="usr">Télefono:</label>
-                <input type="text" class="form-control" id="usr">
-              </div>
+      <div class="form-group">
+            <label for="usr">Télefono:</label>
+            <input type="number" class="form-control" id="tel" name="tel">
+          </div>
 
-              <button type="button" class="btn btn-primary active">Guardar</button>
-              <button type="button" class="btn btn-danger active">Descartar</button>
-            
+          <button type="submit" name="ok" id="ok" value="Aceptar" class="btn btn-primary active">Guardar</button>
+          <button type="button" class="btn btn-danger active">Descartar</button>
+        
+
+</form>
                             <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
